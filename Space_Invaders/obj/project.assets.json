@@ -1,11 +1,168 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "Heirloom.Core/1.0.2-beta": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/Heirloom.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/Heirloom.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Heirloom.Desktop/1.0.2-beta": {
+        "type": "package",
+        "dependencies": {
+          "Heirloom.Core": "1.0.2-beta",
+          "Heirloom.MiniAudio": "1.0.2-beta",
+          "Heirloom.OpenGLES": "1.0.2-beta"
+        },
+        "compile": {
+          "lib/netstandard2.1/Heirloom.Desktop.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/Heirloom.Desktop.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libglfw3.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx-x64/native/libglfw3.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/win-x64/native/glfw3.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          }
+        }
+      },
+      "Heirloom.MiniAudio/1.0.2-beta": {
+        "type": "package",
+        "dependencies": {
+          "Heirloom.Core": "1.0.2-beta"
+        },
+        "compile": {
+          "lib/netstandard2.1/Heirloom.MiniAudio.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/Heirloom.MiniAudio.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libminiaudio.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx-x64/native/libminiaudio.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/win-x64/native/miniaudio.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          }
+        }
+      },
+      "Heirloom.OpenGLES/1.0.2-beta": {
+        "type": "package",
+        "dependencies": {
+          "Heirloom.Core": "1.0.2-beta"
+        },
+        "compile": {
+          "lib/netstandard2.1/Heirloom.OpenGLES.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/Heirloom.OpenGLES.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Heirloom.Core/1.0.2-beta": {
+      "sha512": "k4FqBn7TqKl8NKBZ35p1ViQFe5wmjuqDnrv3NtjkZkjZ3yUMpb8SnOokL97Xp1pJfQHThj0BCwUGspzrtJf0Xg==",
+      "type": "package",
+      "path": "heirloom.core/1.0.2-beta",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "heirloom.core.1.0.2-beta.nupkg.sha512",
+        "heirloom.core.nuspec",
+        "lib/netstandard2.1/Heirloom.Core.dll",
+        "lib/netstandard2.1/Heirloom.Core.xml"
+      ]
+    },
+    "Heirloom.Desktop/1.0.2-beta": {
+      "sha512": "Bpuz4N4kEEGxXLbGf5R6HCw2UaqjiFS5YfVodkidpLxV3XLN2HOiPanR9bunvWSaxGUJe4buVJ9EQ37ApH6IyQ==",
+      "type": "package",
+      "path": "heirloom.desktop/1.0.2-beta",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "heirloom.desktop.1.0.2-beta.nupkg.sha512",
+        "heirloom.desktop.nuspec",
+        "lib/netstandard2.1/Heirloom.Desktop.dll",
+        "lib/netstandard2.1/Heirloom.Desktop.xml",
+        "runtimes/linux-x64/native/libglfw3.so",
+        "runtimes/osx-x64/native/libglfw3.dylib",
+        "runtimes/win-x64/native/glfw3.dll"
+      ]
+    },
+    "Heirloom.MiniAudio/1.0.2-beta": {
+      "sha512": "I8S5bewFMus6Ln4+/pT1s7rfdGkdITb+l2MtEXlSbDfd0kR3/mjAf1unR0LkNczHIXGEBSbjsGy5i5gHeYk3PQ==",
+      "type": "package",
+      "path": "heirloom.miniaudio/1.0.2-beta",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "heirloom.miniaudio.1.0.2-beta.nupkg.sha512",
+        "heirloom.miniaudio.nuspec",
+        "lib/netstandard2.1/Heirloom.MiniAudio.dll",
+        "lib/netstandard2.1/Heirloom.MiniAudio.xml",
+        "runtimes/linux-x64/native/libminiaudio.so",
+        "runtimes/osx-x64/native/libminiaudio.dylib",
+        "runtimes/win-x64/native/miniaudio.dll"
+      ]
+    },
+    "Heirloom.OpenGLES/1.0.2-beta": {
+      "sha512": "5e3vF00MrRl+kFnQVFvcAztuCGrwDVv4aVczNt2pkPAHqfTTHNjF/VRA9UQ5hL1gYPNWWUM71QJXD44MCu7YUA==",
+      "type": "package",
+      "path": "heirloom.opengles/1.0.2-beta",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "heirloom.opengles.1.0.2-beta.nupkg.sha512",
+        "heirloom.opengles.nuspec",
+        "lib/netstandard2.1/Heirloom.OpenGLES.dll",
+        "lib/netstandard2.1/Heirloom.OpenGLES.xml"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "Heirloom.Desktop >= 1.0.2-beta"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\rober\\.nuget\\packages\\": {}
@@ -48,6 +205,12 @@
     "frameworks": {
       "net8.0": {
         "targetAlias": "net8.0",
+        "dependencies": {
+          "Heirloom.Desktop": {
+            "target": "Package",
+            "version": "[1.0.2-beta, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

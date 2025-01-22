@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "rlwoBi2swzw=",
+  "dgSpecHash": "PR7XSEP9WSQ=",
   "success": true,
   "projectFilePath": "C:\\Users\\rober\\Desktop\\Programacion\\Space_invaders\\Space_Invaders\\Space_Invaders\\Space_Invaders.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\rober\\.nuget\\packages\\heirloom.core\\1.0.2-beta\\heirloom.core.1.0.2-beta.nupkg.sha512",
+    "C:\\Users\\rober\\.nuget\\packages\\heirloom.desktop\\1.0.2-beta\\heirloom.desktop.1.0.2-beta.nupkg.sha512",
+    "C:\\Users\\rober\\.nuget\\packages\\heirloom.miniaudio\\1.0.2-beta\\heirloom.miniaudio.1.0.2-beta.nupkg.sha512",
+    "C:\\Users\\rober\\.nuget\\packages\\heirloom.opengles\\1.0.2-beta\\heirloom.opengles.1.0.2-beta.nupkg.sha512"
+  ],
   "logs": []
 }
